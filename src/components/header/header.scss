@@ -1,0 +1,14 @@
+.header {
+  padding: 0.5rem 2rem;
+  background: linear-gradient(to bottom, black, transparent);
+
+  &__container {
+    max-width: calc(83.33333333333334% - 6rem);
+    margin: auto;
+    padding: 1.5rem 0;
+    &__logo {
+      width: 180px;
+      height: 60px;
+    }
+  }
+}
