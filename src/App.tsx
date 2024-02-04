@@ -1,30 +1,12 @@
 import React from "react";
+import "./App.scss";
 
-import logo from "./logo.svg";
-import "./App.css";
-import { useAppDispatch, useAppSelector } from "./hooks/useRedux";
-import { IExampleInitialState } from "./store/example/example.interface";
-import { incrementCount } from "./store/actions";
-
-function App() {
-  const { count } = useAppSelector<IExampleInitialState>(
-    (state) => state.Example
-  );
-  const dispatch = useAppDispatch();
-
-  const handleIncrement = () => dispatch(incrementCount());
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        {count}
-        <button onClick={handleIncrement}>INCREMENT</button>
-      </header>
+    <div>
+      <h1>Namaste Baby</h1>
     </div>
   );
-}
+};
 
 export default App;
