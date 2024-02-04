@@ -1,0 +1,21 @@
+@mixin inputField {
+  border: none;
+  border: 0.01rem solid #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+@mixin input {
+  width: 100%;
+  color: inherit;
+  background: transparent;
+  outline: none;
+  padding: 1rem 1rem;
+  margin: 0;
+  border-radius: 4px;
+  font-size: 14px;
+}

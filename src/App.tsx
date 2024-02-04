@@ -1,12 +1,7 @@
-import React from "react";
-import "./App.scss";
+import Body from "./components/body/Body";
 
 const App = () => {
-  return (
-    <div>
-      <h1>Namaste Baby</h1>
-    </div>
-  );
+  return <Body />;
 };
 
 export default App;
