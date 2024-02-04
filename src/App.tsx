@@ -2,8 +2,17 @@ import React from "react";
 
 import logo from "./logo.svg";
 import "./App.css";
+import { useAppDispatch, useAppSelector } from "./hooks/useRedux";
+import { IExampleInitialState } from "./store/example/example.interface";
+import { incrementCount } from "./store/actions";
 
 function App() {
+  const { count } = useAppSelector<IExampleInitialState>(
+    (state) => state.Example
+  );
+  const dispatch = useAppDispatch();
+
+  const handleIncrement = () => dispatch(incrementCount());
   return (
     <div className="App">
       <header className="App-header">
@@ -11,14 +20,8 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {count}
+        <button onClick={handleIncrement}>INCREMENT</button>
       </header>
     </div>
   );
