@@ -1,4 +1,4 @@
-@import "../../constants/images/index.scss";
+@import "../../styles/index.scss";
 
 .login {
   &__wrapper {
@@ -14,7 +14,7 @@
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.7);
         padding: 48px 68px;
-        min-height: 707px;
+        min-height: 457px;
         border-radius: 4px;
 
         &__title {
@@ -55,6 +55,16 @@
             color: white;
             font-size: 1rem;
             border-radius: 0.25rem;
+            cursor: pointer;
+          }
+          &__link {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 2rem;
+            cursor: pointer;
+            span {
+              font-weight: 700;
+            }
           }
         }
       }
