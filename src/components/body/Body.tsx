@@ -19,6 +19,7 @@ const Body = () => {
       element: <NotFound />,
     },
   ]);
+
   return <RouterProvider router={appRouter} />;
 };
 

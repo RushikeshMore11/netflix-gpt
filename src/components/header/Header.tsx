@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import { NETFLIX_LOGO } from "../../constants/images";
+import { NETFLIX_LOGO } from "../../constants/images/images";
 
 const Header = () => {
   return (
